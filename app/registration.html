@@ -41,10 +41,10 @@
                 </div>
                 <div class="header__main-menu">
                     <ul class="menu__list">
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="#">О Компании</a></li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="compare.html">Акции</a></li>
+                        <li><a href="favorites.html">О Компании</a></li>
+                        <li><a href="card.html">Доставка и оплата</a></li>
+                        <li><a href="registration.html">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="header__main-icons">
@@ -78,7 +78,7 @@
                             </a>
                         </div>
                         <div class="items__catalog">
-                            <a href="#">
+                            <a href="category.html">
                                 Каталог товаров
                                 <span class="items__arrow">
                                     <img src="img/main/arrow-down.png" alt="arrow-down">
@@ -89,8 +89,8 @@
 
                     <div class="navigation-drop__down">
                           <ul>
-                            <li><a class="icon-emblem" href="#"><strong>Акции</strong></a></li>
-                            <li><a class="icon-emblem2" href="#"><strong>Новинки</strong></a></li>
+                            <li><a class="icon-emblem" href="page.html"><strong>Акции</strong></a></li>
+                            <li><a class="icon-emblem2" href="submit.html"><strong>Новинки</strong></a></li>
                             <li><a class="icon-emblem3" href="#">Овощи и фрукты</a></li>
                             <li><a class="icon-emblem4" href="#">Молочная продукция</a></li>
                             <li><a class="icon-emblem5" href="#">Хлеб и сладости</a></li>
@@ -274,9 +274,6 @@
         </div>
       </div>
 
-
-        </div>
-
     </header> 
 
     <div class="breadcrumbs">
@@ -374,12 +371,14 @@
                             <div class="method-input">
                                 <form>
                                    <div class="method-input__block">
-                                       <input type="checkbox"> <span>Доставка</span> 
+                                    <input type="radio" name="radio_old" id="radio_old">
+                                    <label for="radio_old">Доставка</label>   
                                    </div> 
 
                                    <div class="method-input__block">
-                                    <input type="checkbox"checked> <span>Самовывоз</span> 
-                                  </div> 
+                                    <input type="radio" name="radio_old" id="radio_old">
+                                    <label for="radio_old">Самовывоз</label>   
+                                   </div> 
 
                                 </form>
                             </div>
@@ -458,7 +457,7 @@
                         <div class="date__calendar">
                             <div class="word">Выберите дату*</div> 
                         
-                        <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FKiev&amp;src=a2lzZnJlZTc3N0BnbWFpbC5jb20&amp;src=dG9naHZuMDZvYWI0Nzk1YWo4bGFob3FmdGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%23B39DDB&amp;color=%2333B679&amp;showTitle=0&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=0&amp;showNav=0" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+                            <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FKiev&amp;showNav=0&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
                         </div>
                         <div class="date__block">
                             <div class="word">
@@ -466,23 +465,28 @@
                             </div>
                             <div class="date__input">
                                 <div class="date-input__block">
-                                    <input type="checkbox"> <span>9:00 - 12:00</span> 
+                                    <input type="radio" name="radio_old" id="radio_old" checked>
+                                    <label for="radio_old">9:00 - 12:00</label>   
                                   </div>
 
                                   <div class="date-input__block">
-                                    <input type="checkbox"> <span>12:00 - 15:00</span> 
+                                    <input type="radio" name="radio_old" id="radio_old" >
+                                    <label for="radio_old">12:00 - 15:00</label> 
                                   </div>
 
                                   <div class="date-input__block">
-                                    <input type="checkbox"> <span>15:00 - 17:00</span> 
+                                    <input type="radio" name="radio_old" id="radio_old" >
+                                    <label for="radio_old">15:00 - 17:00</label> 
                                   </div>
 
                                   <div class="date-input__block">
-                                    <input type="checkbox"checked> <span>17:00 - 19:00</span> 
+                                    <input type="radio" name="radio_old" id="radio_old" >
+                                    <label for="radio_old">17:00 - 19:00</label> 
                                   </div>
 
                                   <div class="date-input__block">
-                                    <input type="checkbox"> <span>19:00 - 21:00</span> 
+                                    <input type="radio" name="radio_old" id="radio_old" >
+                                    <label for="radio_old">19:00 - 21:00</label> 
                                   </div>
 
                             </div>
@@ -499,12 +503,12 @@
                                 </div>
                                 <div class="payment-card">
                                     <div class="payment-card__input">
-                                        <input type="checkbox" checked>
-                                        Наличными или картой курьеру
+                                        <input type="radio" name="radio_old" id="radio_old" checked>
+                                        <label for="radio_old">Наличными или картой курьеру</label> 
                                     </div>
                                     <div class="payment-card__input payment-card__input--two">
-                                        <input type="checkbox" >
-                                        Оплата картой онлайн
+                                        <input type="radio" name="radio_old" id="radio_old" checked>
+                                        <label for="radio_old">Оплата картой онлайн</label> 
                                         <img src="img/registration/banks__cards.png" alt="banks__cards">
                                     </div>    
                                 </div>
@@ -593,15 +597,15 @@
                       <div class="footer__col-social">
                           <ul class="footer__social-link">
                               <li><a class="link-instagramm" 
-                                  style="background-image: url(../img/main/footer/inst.png);"  
+                                  style="background-image: url(../img/main/footer/inst.svg);"  
                                   href="#"></a></li>
                               <li><a class="link-facebook" 
-                                  style="background-image: url(../img/main/footer/fb.png);"    
+                                  style="background-image: url(../img/main/footer/facebook.svg);"    
                                   href="#">
                               </a></li>
-                              <li><a class="link-vk" style="background-image: url(../img/main/footer/vk.png);"    
+                              <li><a class="link-vk" style="background-image: url(../img/main/footer/vk.svg);"    
                                   href="#"></a></li>
-                              <li><a class="link-whatsapp"style="background-image: url(../img/main/footer/whatsapp.png);"    
+                              <li><a class="link-whatsapp"style="background-image: url(../img/main/footer/viber.svg);"    
                                   href="#"></a></li>
                           </ul>
                       </div>
@@ -609,7 +613,7 @@
               </div>     
           </div>
         </div> 
-    </footer> 
+    </footer>  
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

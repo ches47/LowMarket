@@ -144,6 +144,7 @@
                 input {
                     padding-left: 20px;
                     display: block;
+                    max-width: 562px;
                     width: 100%;
                     border: none;
                     border-radius: 16px;
@@ -173,6 +174,11 @@
                 &:focus {
                     border: 1px solid $light-green;
                 }
+                &:active {
+                    background: $green;
+                    border: 1px solid $green;
+                }
+
             }    
         }
         &-buy {
@@ -650,6 +656,7 @@
         border: none;
         outline: none;
         background-repeat: no-repeat;
+        background-color: white;
         background-image: url(../img/main/left-arrow.png);
     }
     .slick-next.slick-arrow {
@@ -661,17 +668,16 @@
         border: none;
         outline: none;
         background-repeat: no-repeat;
+        background-color: white;
         background-image: url(../img/main/right-arrow.png);
     }
     .object {
         margin: 0 5px;
-        // margin-left: 20px;
         padding: 10px;
         width: 170px;
         height: 390px;   
         border: 2px solid #e5e3e3;
         border-radius: 10px;
-        // box-shadow: 0px 1px 5px rgba(15, 14, 14, 0.25);
         .sale {
             color: #fff;
             text-align: center;
@@ -768,6 +774,7 @@
         border: none;
         outline: none;
         background-repeat: no-repeat;
+        background-color: white;
         background-image: url(../img/main/left-arrow.png);
     }
     .slick-next.slick-arrow {
@@ -779,6 +786,7 @@
         border: none;
         outline: none;
         background-repeat: no-repeat;
+        background-color: white;
         background-image: url(../img/main/right-arrow.png);
     }
 }
@@ -1031,6 +1039,7 @@
                 border: none;
                 cursor: pointer;
                 color: $green;
+                background-color: white;
                 border-bottom: 2px dotted #35862E;
                 &::before {
                     content: 'X';
@@ -1082,6 +1091,7 @@
                     a {
                         color: #000;
                         &:hover {
+                            color: $green;
                             text-decoration: underline;
                         }
                     }
@@ -1119,6 +1129,11 @@
                             padding-left: 7px;
                             padding-top: 15px;
                         }
+                        &:hover,
+                        &:active {
+                            transition: 0.5s;
+                            background-color: #c2d9c2;
+                        }
                     } 
                     a {
                         width: 32px;
@@ -1129,6 +1144,7 @@
                             margin-left: 7px;
                         }
                     }
+                    
                 }
             }
         }
@@ -1401,9 +1417,6 @@
                     top: -3px;
                     left: 5px;
                 } 
-                a.done {
-                        color: $green;
-                }
             }
             &:hover {
                 transition: 0.7s;
@@ -1412,7 +1425,7 @@
             }
             &__green {
                 border: 1px solid $green;
-                color: #fff;
+                // color: #fff;
             }
         }
         .order-block {
@@ -1441,15 +1454,6 @@
         a {
             color: #fff;
         }
-        // &::before {
-        //     content: '';
-        //     width: 102px;
-        //     height: 1px;
-        //     background-color: $gray;
-        //     position: absolute;
-        //     left: 98px;
-        //     top: 20px;
-        // }
     }
 }
 
@@ -2094,7 +2098,7 @@
         .content {
             display: none;
             overflow: hidden;
-            background-color: #f1f1f1;
+            background-color: white;
             a {
                 padding-bottom: 4px;
             }
@@ -2103,12 +2107,14 @@
     .favorites-list__button {
         padding-top: 30px;
         text-align: center;
+        
         button {
             border: none;
             color: $green;
             outline: none;
             cursor: pointer;
             border-bottom: 2px dotted $green;
+            background-color: white;
             &::before {
                 content: 'X';
                 padding-right: 5px;
@@ -2191,9 +2197,7 @@
                 border: 1px solid $gray;
                 outline: none;
                 cursor: pointer;
-                
             }
-
         }
         .btn-exit {
             padding-left: 150px;
@@ -2202,7 +2206,6 @@
             cursor: pointer;
             span {
                 border-bottom: 2px dotted $gray;
-
             }
         }
     }
@@ -2373,19 +2376,17 @@
         }
 }
 
-button.active, .cabinet__blocks-btns .block-btns button:hover {
-    background-color: rgb(74, 172, 74);
-    color: white;
-    transition: 0.5s;
-}
+// button.active, .cabinet__blocks-btns .block-btns button:hover {
+//     background-color: rgb(74, 172, 74);
+//     color: white;
+//     transition: 0.5s;
+// }
 
 #block-btns button.active {
-    background-color:  rgb(74, 172, 74);;
+    background-color:  rgb(74, 172, 74);
+    color: #fff;
 }
 
-#block-btns .tab.active {
-    background: green; //Разберись
-}
 
 //modal
 #modal {
@@ -2412,6 +2413,7 @@ button.active, .cabinet__blocks-btns .block-btns button:hover {
             padding-top: 20px;
             padding-left: 20px;
         }
+        
         input {
             width: 330px;
             height: 40px;
@@ -2421,6 +2423,10 @@ button.active, .cabinet__blocks-btns .block-btns button:hover {
             border-radius: 24px;
             border: 1px solid $gray;    
         }
+    }
+    a.input__radio {
+        color: #000;
+
     }
     .modal__reminder {
         padding-top: 30px;

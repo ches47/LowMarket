@@ -37,9 +37,6 @@ $('.cabinet__wrapper .tab').on('click', function(event) {
         $('#'+id).addClass('active-tab').fadeIn();
         return false;
     });
-
-
-    
 });
 
 
@@ -75,15 +72,10 @@ for (i = 0; i < brandColl.length; i++) {
     });
 }
 
-                    
-
-// Cabinet Page active class to the current button 
-let header = document.getElementById("block-btns");
-let btns = header.getElementsByClassName("button");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    let current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+//Переключалка цвет в cabinet.html
+$('.block-btns').ready(function(){
+    $('.btn').click(function(){
+      $('.btn').removeClass('active').addClass('inactive');
+       $(this).removeClass('inactive').addClass('active');
+      });
+  })
