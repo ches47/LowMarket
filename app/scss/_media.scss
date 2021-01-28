@@ -1,0 +1,138 @@
+//MIN
+@media (min-width: 1700px) {
+.main__background-text {
+    top: 197px;
+    right: 246px;
+ }
+}
+
+
+
+//MAX
+@media (max-width: 1400px) {
+    .main__background-text {
+        top: 197px;
+        right: 146px;
+     }
+}
+
+@media (max-width: 1400px) { 
+    .main__background-text {
+        right: 46px;
+     }       
+}
+
+
+@media (max-width: 1000px) {
+    .main__background-text {
+        top: 251px;
+     }
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+    .footer__col {
+        padding-left: 20px;
+    }
+    
+}
+
+
+@media (max-width: 885px) { 
+    .footer__content .footer__inner  { 
+        justify-content: center;
+    }
+    .footer__col {
+        padding-left: 50px;
+    }
+
+    .footer__col:nth-child(4) {
+        padding-top: 70px;
+        padding-left: 0;
+    }
+    
+}
+
+@media (max-width: 752px) { 
+    .main__background {
+        min-height: 500px;
+    }
+    .main__background-text {
+        top: 159px;
+        width: 222.34px;
+        height: 231.64px;
+    }
+    .main__background-text h2 {
+        padding-top: 57px;
+        padding-left: 25px;
+        line-height: 36px;
+        top: 282px;
+        right: 102px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .footer__col:nth-child(3) {
+        padding-top: 40px;
+        min-width: 50%;
+    }
+    .footer__col:nth-child(4) {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 652px) { 
+    .footer__col:nth-child(3) {
+        min-width: 60%;
+    }
+}
+
+@media (max-width: 583px) { 
+    .footer__col {
+        display: none;
+    }   
+    .footer__col:nth-child(4) {
+        display: block;
+    }     
+}
+
+@media (max-width: 530px) { 
+    .main__background-text {
+        top: 212px;
+        width: 269.34px;
+        height: 80.64px;
+        right: 124px;
+        transform: rotate(-1deg);
+    }
+    .main__background-text h2 {
+        text-align: center;
+        line-height: 28px;
+        padding-left: 0;
+        width: 270px;
+        padding-top: 0;
+        font-size: 17px;
+        transform: rotate(1deg);
+    }
+    .main__background {
+        min-width: 320px;
+        min-height: 320px;
+    }
+
+}
+
+@media (max-width: 480px) { 
+    .main__background-text {
+        right: 14%;
+    }
+}
+
+@media (max-width: 350px) {
+    .main__background-text {
+        right: 8%;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__background-text {
+        right: 4%;
+    }
+}
