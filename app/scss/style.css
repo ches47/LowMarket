@@ -3215,6 +3215,16 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .about .about__advantages {
+    padding-bottom: 0;
+  }
+  .about__advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__advantages-block {
+    padding-bottom: 50px;
+  }
   .footer__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3272,6 +3282,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .about .about__advantages-block {
+    padding-right: 6px;
+  }
+}
+
 @media (max-width: 583px) {
   .items__main-block {
     width: 35%;
@@ -3285,6 +3301,9 @@ body {
   }
   .items__main-text {
     margin-top: -40px;
+  }
+  .about button.more {
+    margin-left: 0;
   }
   .footer__col {
     display: none;
