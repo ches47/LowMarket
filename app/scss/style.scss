@@ -827,6 +827,9 @@
         }
     }
 }
+.slick-dots {
+    display: none!important;
+}
 
 .product__stock-block {
     position: relative;
@@ -2489,7 +2492,8 @@
         }
         
         input {
-            width: 330px;
+            max-width: 330px;
+            width: 100%;
             height: 40px;
             padding-left: 20px;
             color: $green; 
@@ -2505,9 +2509,10 @@
     .modal__reminder {
         padding-top: 30px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         &-input {
-
+            // margin-left: 20px;
             span {
                 padding-left: 10px;
             }
