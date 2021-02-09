@@ -948,6 +948,7 @@
 .choise__block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     &-title {
         font-size: 24px;
         line-height: 32px;
@@ -1046,6 +1047,7 @@
 .category-block {
     display: flex;
     justify-content: space-between; 
+    flex-wrap: wrap;
     .category__aside { 
         height: 1100px; 
         margin-top: 50px;
@@ -1053,7 +1055,7 @@
         border-radius: 10px;
         -webkit-box-shadow: 0px 1px 5px rgba(15,14,14,0.25);
         box-shadow: 0px 1px 5px rgba(15,14,14,0.25);
-        width: 370px;
+        min-width: 330px;
         &-divide {
             padding-bottom: 10px;
             border-bottom: 2px solid $light-gray;
@@ -1233,6 +1235,9 @@
 .food__block {
     display: flex;
     justify-content: space-between;
+    &-title583 {
+        display: none;
+    }
     &-descr {
         width: 570px;
         height: 345px;
@@ -1354,11 +1359,15 @@
            line-height: 32px; 
            font-weight: 600;    
        }
+    &-about,
+    &-composition {
+        width: 50%;
+    }
+
   .about-block,
   .about-condition,
   .composition-value {
       padding-bottom: 30px;     
-      width: 600px;     
     .desc {
         display: flex; 
         justify-content: space-between;
@@ -1375,9 +1384,9 @@
             text-align: left;    
         }
    
-            a {
-                color: $green;
-            }
+        a {
+            color: $green;
+        }
     }
 } 
 
@@ -1415,6 +1424,7 @@
         justify-content: space-between;
         .date {
             color: $gray;
+            padding-left: 20px;
         }
     }
 }
