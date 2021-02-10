@@ -1458,6 +1458,9 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    &__1025px {
+        display: none;
+    }
     .indication__compare-item {
         display: flex;
         .indication__section-item--arrows {
@@ -1553,6 +1556,7 @@
 .basket-blocks {
     display: flex; 
     justify-content: space-between;
+    // flex-wrap: wrap-reverse;
     .basket-tables {
         border: 1px solid $gray;
         border-radius: 12px;
@@ -1562,13 +1566,16 @@
         height: 400px;
     }
     .tables__input {
-        position: relative;
+        form {
+            position: relative;
+        }
         input {
             min-width: 300px;
             height: 30px;
             padding: 20px;
             border: 1px solid $gray;
             border-radius: 24px;
+            color: $green;
         }
         button {
             position: absolute;
