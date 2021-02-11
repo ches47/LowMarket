@@ -1453,6 +1453,9 @@
 //indication
 .indication {
     padding-bottom: 50px;
+    &__cabinet__1025px{
+        display: none;
+    }
 
 .indication__section {
     display: flex;
@@ -2294,7 +2297,7 @@
             }
         }
         .btn-exit {
-            padding-left: 150px;
+            padding-left: 10%;
             margin-top: 15px;
             color: $gray;
             cursor: pointer;

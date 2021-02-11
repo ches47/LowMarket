@@ -39,11 +39,28 @@
          flex-wrap: wrap;
          flex: 0 1 50%;
      }
+     
 }
 
 @media (max-width: 1125px) { 
     .category-block .category__aside {
         width: 100%;
+    }
+    .cabinet__blocks .history .history__list ul li {
+        display: block; 
+        text-align: left;
+    }
+    .cabinet__blocks .history .history__list ul li a {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;   
+    }
+    .cabinet__blocks .history .history__list ul li .address {
+        padding-bottom: 10px;        
+    }
+    .cabinet__blocks .history .history__list ul li .price {
+        padding-bottom: 20px;  
+        font-weight: 600; 
     }
    
 }
@@ -75,7 +92,8 @@
 
 
 @media (max-width: 1024px) { 
-    .indication__section__1025px {
+    .indication__section__1025px,
+    .indication__cabinet__1025px {
         display: flex !important;
         justify-content: space-between;
         padding: 0 20px;
@@ -95,9 +113,28 @@
     .indication .indication__section {
         display: none;
     }
+    .indication__cabinet {
+        display: block;
+    }
+    .breadcrumbs {
+        display: none;
+    }
+    .btn-exit {
+        display: none;
+    }
+    .cabinet__blocks-btns .block-btns button{
+        width: 190px;
+    }
+    .cabinet__blocks-btns .block-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cabinet__blocks .profile .title {
+        display: none;
+    }
    
 }
-
+ 
 
 @media (max-width: 1000px) {
     .main__background-text {
@@ -143,6 +180,47 @@
      .info__options-about,
      .info__options-composition {
          width: 100%;
+     }
+     .cabinet__blocks .profile .profile__data-inputs form {
+         display: block;
+         text-align: center;
+     }
+     .cabinet__blocks .profile .profile__data-inputs .profile__input input {
+         text-align: center;
+     }
+     .cabinet__blocks .profile .profile__data-inputs {
+         padding-top: 0;    
+     }
+     .profile-password__now,
+     .profile-password__new-block {
+         display: block !important;
+         text-align: center;
+     }
+     .cabinet__blocks .profile__password__input .profile-password__now, .cabinet__blocks .profile__password__input .profile-password__new, .cabinet__blocks .profile__password__input .profile-password__repeat
+      {
+         padding-top: 0;
+     }
+     .cabinet__blocks .profile__password__input .profile-password__repeat {
+        padding-left: 0px;
+     }
+     .profile__password__input {
+         margin-right: 20px;
+     }
+     .cabinet__blocks .saved .saved__list ul li {
+         display: block; 
+         border: 1px solid $gray;
+         border-radius: 12px;
+         margin-bottom: 10px;  
+         padding-right: 20px;
+         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+     }
+     .cabinet__blocks .saved .saved__list .agree,
+     .cabinet__blocks .saved .saved__list ul li .delete  {
+         text-align: right;
+         width: 100%; 
+     }
+     .cabinet__blocks .saved .saved__list .place {
+         padding-bottom: 10px;   
      }
      
     .footer__inner {
@@ -246,6 +324,16 @@
     .about .about__advantages-block {
         padding-right: 6px;
     }
+    .cabinet__blocks-btns .block-btns {
+        display: block;
+        text-align: center;
+    }
+    .cabinet__blocks-btns .block-btns button {
+        margin-bottom: 20px;
+        width: 100%;
+        color: $green;
+    }
+
 }
 
 
@@ -416,6 +504,9 @@
     }
     .comments-descr .text {
         font-size: 12px;
+    }
+    .cabinet__blocks .history .history__list ul li button {
+        width: 140px;    
     }
 }
 @media (max-width: 380px) { 
