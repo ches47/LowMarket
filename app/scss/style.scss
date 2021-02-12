@@ -1453,7 +1453,8 @@
 //indication
 .indication {
     padding-bottom: 50px;
-    &__cabinet__1025px{
+    &__cabinet__1025px,
+    &__compare-1025px{
         display: none;
     }
 
@@ -2127,6 +2128,7 @@
             .title {
                 text-align: center;
                 font-size: 24px;
+                line-height: 30px;
                 font-weight: 600;
                 padding-bottom: 20px;
             }
