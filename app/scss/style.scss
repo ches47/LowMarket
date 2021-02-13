@@ -1455,7 +1455,8 @@
     padding-bottom: 50px;
     &__cabinet__1025px,
     &__compare-1025px,
-    &__favorites-1025px{
+    &__favorites-1025px,
+    &__registration-1025px {
         display: none;
     }
 
@@ -1484,6 +1485,7 @@
     }
     .title {
         font-size: 24px;
+        line-height: 30px;
         font-weight: 600;
         color: $green;
         span {
@@ -1708,7 +1710,9 @@
 .registration__block {
     display: flex;
     justify-content: space-between;
-
+    &-data {
+        width: 100%;
+    }
     .personal__data {
         .title {
             font-size: 18px;
@@ -1719,6 +1723,7 @@
         .form__user {
             form {
                 display: flex;
+                flex-wrap: wrap;
                 .block-user {
                     padding-right: 40px;
                 }
@@ -1814,6 +1819,10 @@
                         .address-text {
                             margin-left: 14px;
                         }
+                        &__data {
+                            display: flex;
+                            padding-left: 40px;
+                        }
                     }
                     #city {
                         width: 370px;
@@ -1879,6 +1888,7 @@
         }
         .date__calendar-block {
             display: flex;
+            flex-wrap: wrap;
         }
         .date__calendar {
             .word {
@@ -1964,6 +1974,8 @@
             padding-top: 10px;
             color: $green;
             resize: none; 
+            width: 100%;
+            max-width: 750px;
         }
         .text {
             padding-top: 30px;

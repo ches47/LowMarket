@@ -110,7 +110,37 @@
     .favorites__objects .object {
         margin-bottom: 30px;   
     }
-   
+    .registration__block {
+        flex-wrap: wrap-reverse;
+    }
+    .registration__block-total {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .personal__data .title,
+    .delivery__method .title,
+    .delivery__address .title,
+    .registration__block .delivery__method .method-text,
+    .registration__block .delivery__address .address .address__choice,
+    .registration__block .payment .payment__method .payment-text,
+    .registration__block .date__time .title,
+    .registration__block .payment .title,
+    .registration__block .comment .comment-text,
+    .comment__method form,
+    .registration__block .comment .title{
+        text-align: center;
+    }
+    .registration__block .personal__data .form__user form,
+    .registration__block .delivery__method .method-input form,
+    .registration__block .delivery__address .address form,
+    .registration__block .date__time .date__calendar-block,
+    .registration__block .payment .payment__method .payment-card {
+        justify-content: center;  
+    }
+    .registration__block .delivery__method .method-text,
+    .registration__block .payment .payment__method .payment-text {
+        margin-bottom: 20px;   
+    }
 }
 
 @media (max-width: 1065px) { 
@@ -138,12 +168,12 @@
     }
 }
 
-
 @media (max-width: 1024px) { 
     .indication__section__1025px,
     .indication__cabinet__1025px ,
     .indication__compare-1025px, 
-    .indication__favorites-1025px{
+    .indication__favorites-1025px,
+    .indication__registration-1025px{
         display: flex !important;
         justify-content: space-between;
         padding: 0 20px;
@@ -185,7 +215,6 @@
    
 }
  
-
 @media (max-width: 1000px) {
     .main__background-text {
         top: 251px;
@@ -295,6 +324,9 @@
     .compare__objects .object {
         margin-bottom: 40px;
     }
+    .registration__block .delivery__address .address form{
+        flex-wrap: wrap;
+    }
     .footer__content .footer__inner  { 
         justify-content: center;
     }
@@ -306,6 +338,43 @@
         padding-left: 0;
     }
     
+}
+
+@media (max-width: 850px) { 
+    .registration__block .delivery__address .address form .address-block__data {
+        margin-top: 30px;   
+    }
+    .registration__block .delivery__address .address form .address-block .address-text {
+        text-align: center;
+    }
+    .registration__block .delivery__address .address form #city {
+        margin-left: 30px;   
+    }
+
+}
+
+@media (max-width: 810px) { 
+    .registration__block .personal__data .form__user form .block-user {
+        padding-right: 10px;
+    }
+    .registration__block .personal__data .form__user form .heading {
+        text-align: center;  
+    }  
+}
+
+@media (max-width: 779px) { 
+    .registration__block .personal__data .form__user form .block-data {
+        margin-top: 20px;
+    }
+    .registration__block .payment .payment__method .payment-card {
+        flex-wrap: wrap;
+    }
+    .registration__block .payment .payment__method .payment-card__input {
+        margin-bottom: 30px;   
+    }
+    .registration__block .payment .payment__method .payment-card .payment-card__input--two {
+        margin-left: 0; 
+    }
 }
 
 @media (max-width: 752px) { 
@@ -332,6 +401,13 @@
     .basket-chosen li .piece {
         display: none;
     }
+    .registration__block .date__time .date__block {
+        padding-top: 0;
+    }
+    .registration__block .date__time .date__calendar .word {
+        text-align: center;
+    }
+
     .footer__col:nth-child(3) {
         padding-top: 40px;
         min-width: 53%;
@@ -340,6 +416,7 @@
         padding-top: 40px;
     }
 }
+
 @media (max-width: 670px) { 
     .compare__objects {
         justify-content: center;
@@ -400,7 +477,6 @@
     
 
 }
-
 
 @media (max-width: 583px) { 
     .items__main-block {
@@ -501,6 +577,12 @@
     .choise__block {
         justify-content: center;
     }
+    .registration__block .delivery__address .address form .address-block__data {
+        padding-left: 0;  
+    }
+    .registration__block .delivery__address .address form #city {
+        margin-left: 0px;   
+    }
 
 }
 
@@ -569,6 +651,12 @@
     .basket-chosen__item .text {
         font-size: 13px;
     }
+    .registration__block .delivery__address .address form .address-block {
+        margin-left: 10px;    
+    }
+    .registration__block .payment .payment__method .payment-card__input {
+        padding-left: 20px;   
+    }
 }
 
 @media (max-width: 420px) { 
@@ -588,7 +676,12 @@
      .compare__blocks-about .information-value a {
         font-size: 10px;
      }
+     .registration__block .payment .payment__method .payment-card__input img{
+        width: 80px;
+     }
+
 }
+
 @media (max-width: 380px) { 
     .basket-blocks .tables__score {
         padding-top: 10px;   
@@ -596,7 +689,12 @@
     .tables__score-min {
         font-size: 14px !important;
     }
-
+    .registration__block .personal__data .form__user form input {
+        max-width: 270px;
+    }
+    .registration__block .delivery__address .address form #city {
+        width: 270px;
+    }
 }
 
 @media (max-width: 370px) {
@@ -631,8 +729,13 @@
     .basket-blocks .tables__input input {
         min-width: 247px;
     } 
+    .registration__block .delivery__method .method {
+        font-size: 14px;    
+    }
+    .registration__block .payment .payment__method .payment-card__input {
+        font-size: 12px;
+    }
 }
-
 
 @media (max-width: 350px) {
     .product__stock-block .block-showMore .show-all {
