@@ -39,6 +39,18 @@
          flex-wrap: wrap;
          flex: 0 1 50%;
      }
+     .order-block {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;  
+    }
+    .order__main {
+        margin-bottom: 50px;
+    }
+    .order__info {
+        margin-bottom: 50px;
+        width: 100%;  
+    }
      
 }
 
@@ -173,7 +185,8 @@
     .indication__cabinet__1025px ,
     .indication__compare-1025px, 
     .indication__favorites-1025px,
-    .indication__registration-1025px{
+    .indication__registration-1025px,
+    .indication__submit-1025px{
         display: flex !important;
         justify-content: space-between;
         padding: 0 20px;
@@ -300,6 +313,9 @@
      }
      .cabinet__blocks .saved .saved__list .place {
          padding-bottom: 10px;   
+     }
+     .order__info {
+        margin-left: 0;
      }
      
     .footer__inner {
@@ -532,6 +548,9 @@
     .basket-chosen__item .text {
         padding-left: 10px;
     } 
+    .order__main-title {
+        line-height: 33px;
+    }
     .footer__col {
         display: none;
     }   
@@ -694,6 +713,10 @@
     }
     .registration__block .delivery__address .address form #city {
         width: 270px;
+    }
+    .order__main {
+        width: 100%;
+        padding: 50px; 
     }
 }
 
