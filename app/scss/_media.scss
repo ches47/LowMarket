@@ -698,6 +698,13 @@
      .registration__block .payment .payment__method .payment-card__input img{
         width: 80px;
      }
+     .product__objects .object {
+         width: 60%!important;
+        }
+
+     .slick-slide.slick-current.slick-active {    
+            text-align: center;
+     }
 
 }
 
@@ -728,7 +735,7 @@
         right: 10%;
     }
     .slick-slide img {
-        width: 260px;
+        // width: 260px;
     }
     .header__contacts-gps {
         display: none;
@@ -757,6 +764,12 @@
     }
     .registration__block .payment .payment__method .payment-card__input {
         font-size: 12px;
+    }
+    .product__objects .object .price {
+        font-size: 13px;      
+    }
+    .product__objects .object button.busket {
+        margin-left: 10px;
     }
 }
 
