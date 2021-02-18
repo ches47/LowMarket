@@ -10,15 +10,9 @@
 @media (max-width: 1400px) {
     .main__background-text {
         top: 197px;
-        right: 146px;
+        right: 46px;
      }
 
-}
-
-@media (max-width: 1400px) { 
-    .main__background-text {
-        right: 46px;
-     }       
 }
 
 @media (max-width: 1199px) { 
@@ -326,7 +320,20 @@
     }
 }
 
+@media (max-width: 970px) { 
+    .items__catalog {
+        display: none;
+    }        
+}
+
 @media (max-width: 885px) { 
+    .header__main-icons .header__icon {
+        padding-left: 25px;
+    }
+    .header__main-menu .menu__list li,
+    .header__main-menu .menu__list li+li {
+        padding-right: 30px;
+    }
     .breadcrumbs__list li+li {
         padding-left: 0px;
     }
@@ -376,9 +383,13 @@
     .registration__block .personal__data .form__user form .heading {
         text-align: center;  
     }  
+    .navigation .header__navigation-form {
+        width: 480px;
+    }
 }
 
 @media (max-width: 779px) { 
+ 
     .registration__block .personal__data .form__user form .block-data {
         margin-top: 20px;
     }
@@ -430,6 +441,31 @@
     }
     .footer__col:nth-child(4) {
         padding-top: 40px;
+    }
+}
+
+@media (max-width: 700px) { 
+    .header__main,
+    .header__basket-box {
+        display: none;
+    }
+    .header__btn-menu {
+        display: block;
+        bottom: 0px;
+        position: fixed;
+        width: 100%;
+        min-width: 360px;
+        height: 50px;
+        background-color: $green;
+        z-index: 3;
+    }
+    .header__contacts {
+        margin-bottom: 30px;       
+    }
+    .header__contacts-logo {
+        display: block;
+        margin-top: 25px;
+        margin-left: -20px;    
     }
 }
 
@@ -495,6 +531,9 @@
 }
 
 @media (max-width: 583px) { 
+    // .navigation .header__navigation-form {
+    //     width: 266px;
+    // }
     .items__main-block {
         width: 35%;
         height: 90px;
@@ -593,6 +632,9 @@
         margin-left: 25px;
         margin-bottom: 10px;
     }
+        .contacts-time {
+        display: none;
+    }
     .choise__block {
         justify-content: center;
     }
@@ -609,9 +651,7 @@
     .slick-slide img {
         max-width: 300px;
     }
-    .contacts-time {
-        display: none;
-    }
+
     .navigation-arrows ul li {
         padding-left: 15px;
     }
@@ -743,9 +783,7 @@
     .header__main-logo {
         margin-top: -50px;
     }
-    .header__contacts-info {
-        margin-left: 50%;
-    }
+
     .basket-chosen li .price {
         font-size: 15px;
     }
@@ -779,5 +817,8 @@
     }
     .basket-blocks .tables__total-text {
         padding: 15px 0;
+    }
+    ul.btn-menu__list li {
+        margin-right: 22px!important;
     }
 }
