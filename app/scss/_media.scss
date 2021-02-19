@@ -191,7 +191,7 @@
         color: #fff;
         padding-top: 20px;
         font-size: 18px;
-        font-size: 600;
+        font-weight: 600;
         .delete__btn {
             cursor: pointer;
         }
@@ -449,6 +449,7 @@
     .header__basket-box {
         display: none;
     }
+    
     .header__btn-menu {
         display: block;
         bottom: 0px;
@@ -459,6 +460,34 @@
         background-color: $green;
         z-index: 3;
     }
+    .header-menu__list {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        height: 770px;
+        max-width: 700px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .header-menu__logo {
+        padding: 0 30px;  
+        background-color: #fff;  
+        max-width: 700px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        .header__contacts-logo {
+            margin-top: 0px;
+        }
+        .header__contacts-info {
+            padding-top: 22px;    
+            a {
+                color: $green;
+                font-size: 20px;
+            }
+        }
+    }
     .header__contacts {
         margin-bottom: 30px;       
     }
@@ -466,6 +495,64 @@
         display: block;
         margin-top: 25px;
         margin-left: -20px;    
+    }
+    .indication__header-menu-1025px{
+        display: flex !important;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        background-color: $green;
+        color: #fff;
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .header-menu__sked {
+        text-align: center;
+        li {
+            padding-top: 15px;
+            padding-bottom: 15px;    
+            border-bottom: 1px solid #E0E0E0;
+            
+            &:nth-child(9) {
+                border-bottom: none;
+            }
+            a {
+                color: #000;
+                cursor: pointer;
+                &:hover {
+                    color: $green;
+                }
+            }
+            img {
+                padding-right: 10px;
+            }
+            a.favorites-color {
+                color: $green;
+            }
+            a.city-link {
+                color: $green;
+                border-bottom: 1px dotted $green;
+            }
+        }
+    }
+    .header-menu-social {
+        padding-top: 30px;
+        .header-menu-link {
+            display: flex;
+            justify-content: center;
+            li {
+                margin-left: 40px;  
+                &:nth-child(1) {
+                    margin-left: 0px;  
+                } 
+            }
+        }
+    }
+    .footer__content {
+        padding-bottom: 30px;  
     }
 }
 
@@ -549,6 +636,9 @@
     }
     .about button.more {
         margin-left: 0;
+    }
+    .food {
+        padding-top: 20px;
     }
     .food__block-title583 {
         display: block;
@@ -774,9 +864,9 @@
     .main__background-text {
         right: 10%;
     }
-    .slick-slide img {
-        // width: 260px;
-    }
+    // .slick-slide img {
+    //     // width: 260px;
+    // }
     .header__contacts-gps {
         display: none;
     }
@@ -818,7 +908,14 @@
     .basket-blocks .tables__total-text {
         padding: 15px 0;
     }
-    ul.btn-menu__list li {
-        margin-right: 22px!important;
+}
+
+@media (max-width: 340px) { 
+    ul.btn-menu__list li:nth-child(5) {
+        margin-right: 22px;
+    }
+    .header-menu__logo .header__contacts-info a {
+        font-size: 18px;
+        padding-right: 12px;
     }
 }

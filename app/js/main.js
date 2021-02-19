@@ -1,5 +1,10 @@
 $(function() {
 
+// Второе меню при aдаптиве 700px 
+$('.button-list').on('click', function() {
+  $('.header-menu__list').slideToggle();
+});
+
 //Новые поступления (Index Page)   
 $('.product__objects').slick({
     infinite: true,

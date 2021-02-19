@@ -70,17 +70,27 @@
 
 .header__btn-menu {
     display: none;
+    position: relative;
 } 
+
+.header-menu__list {
+    display: none;
+}
 ul.btn-menu__list {
-        padding-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        li {
+    display: flex;
+    justify-content: space-between;
+    li {
+            padding-top: 10px;
+            cursor: pointer;
             margin-right: 10px;
             width: 60px;
             text-align: center;
             &:nth-child(5) {
                 margin-right: 0px;  
+            }
+            &:hover {
+                background-color: #489e40;
+                transition: .3s;
             }
         }
 }
@@ -382,7 +392,7 @@ ul.btn-menu__list {
   .main__background {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
+    // max-width: 1600px;
     background-image: url("../img/main/mainimg/header-desktop.jpeg");
   }
 
@@ -1478,9 +1488,11 @@ ul.btn-menu__list {
     &__compare-1025px,
     &__favorites-1025px,
     &__registration-1025px,
-    &__submit-1025px {
+    &__submit-1025px,
+    &__header-menu-1025px {
         display: none;
     }
+
 
 .indication__section {
     display: flex;
