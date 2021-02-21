@@ -48,10 +48,16 @@
     .indication .indication__section-change .change-block .word {
         margin-bottom: -10px;
     }
+    .compare__blocks .compare-list__button {
+        padding-bottom: 30px;
+    }
      
 }
 
 @media (max-width: 1125px) { 
+    .category-block {
+        justify-content: center;
+    }
     .category-block .category__aside {
         width: 100%;
     }
@@ -179,7 +185,7 @@
     .registration__block .payment .payment__method .payment-text {
         margin-bottom: 20px;   
     }
-    .product__stock {
+    .category-product__stock {
         padding: 0;
     }
 }
@@ -485,6 +491,16 @@
     }
     .registration__block .date__time .date__calendar .word {
         text-align: center;
+    }
+    .category__objects {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .category__objects .object {
+        margin-top: 10px;
+    }
+    .category button.more {
+        margin-left: 0;
     }
 
 }
