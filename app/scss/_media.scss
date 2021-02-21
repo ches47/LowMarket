@@ -461,7 +461,7 @@
         z-index: 3;
     }
     .header-menu__list {
-        display: block;
+        display: none;
         position: absolute;
         bottom: 50px;
         height: 770px;
@@ -614,13 +614,9 @@
         color: $green;
     }
     
-
 }
 
 @media (max-width: 583px) { 
-    // .navigation .header__navigation-form {
-    //     width: 266px;
-    // }
     .items__main-block {
         width: 35%;
         height: 90px;
@@ -763,7 +759,6 @@
      .compare__blocks-about .information-value a {
         font-size: 12px;
      }
-    
 }
 
 @media (max-width: 430px) { 
@@ -864,9 +859,6 @@
     .main__background-text {
         right: 10%;
     }
-    // .slick-slide img {
-    //     // width: 260px;
-    // }
     .header__contacts-gps {
         display: none;
     }
@@ -877,7 +869,6 @@
     .basket-chosen li .price {
         font-size: 15px;
     }
-
 }
 
 @media (max-width: 360px) {

@@ -1,5 +1,4 @@
 $(function() {
-
 // Второе меню при aдаптиве 700px 
 $('.button-list').on('click', function() {
   $('.header-menu__list').slideToggle();
@@ -59,8 +58,6 @@ $('.product__objects').slick({
     ]
 });
 
-//
-
 //Специальные предложения (Index Page)   
 $('.product__slider-inner').slick({
     infinite: true,
@@ -102,7 +99,7 @@ $('.wrapper .tab').on('click', function(event) {
         $(this).addClass('active');
         $('#'+id).addClass('active-tab').fadeIn();
         return false;
-    });
+  });
 
 //Tabs(Cabinet Page)   
 $('.cabinet__wrapper .tab').on('click', function(event) {
@@ -115,13 +112,12 @@ $('.cabinet__wrapper .tab').on('click', function(event) {
     });
 });
 
-
  //Show the dropdown Menu (Caterofy and Favorites Pages)
- function myFunction() {
+ function myFunction() { 
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown Menu (Caterofy and Favorites Pages)
+// Close the dropdown Menu (Category and Favorites Pages)
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     var myDropdown = document.getElementById("myDropdown");
@@ -130,7 +126,6 @@ window.onclick = function(e) {
       }
   }
 }
-
 
 // Favorites Pаge (Бренды)
 let brandColl = document.getElementsByClassName("brand");
@@ -154,4 +149,4 @@ $('.block-btns').ready(function(){
       $('.btn').removeClass('active').addClass('inactive');
        $(this).removeClass('inactive').addClass('active');
       });
-  })
+})
