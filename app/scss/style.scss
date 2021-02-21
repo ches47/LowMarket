@@ -1270,6 +1270,7 @@ ul.btn-menu__list {
         padding: 20px; 
         .desc-title {
             .title {
+                text-align: center;
                 font-size: 22px;
                 line-height: 32px;
                 font-weight: 600;
@@ -1535,8 +1536,8 @@ ul.btn-menu__list {
                 position: relative;
                 img {
                     position: relative;
-                    top: -3px;
-                    left: 5px;
+                    top: -27px;
+                    left: 43px;
                 } 
             }
             &:hover {
@@ -1990,7 +1991,7 @@ ul.btn-menu__list {
             border: 1px solid $gray;
             outline: none;
             padding-left: 20px;
-            padding-top: 10px;
+            padding-top: 20px;
             color: $green;
             resize: none; 
             width: 100%;
@@ -2033,7 +2034,7 @@ ul.btn-menu__list {
             margin-top: 30px;
            button {
                 background-color: $green;
-                width: 140px;
+                width: 160px;
                 height: 35px;
                 border-radius: 16px;
                 border: none;
@@ -2143,6 +2144,7 @@ ul.btn-menu__list {
             outline: none;
             cursor: pointer;
             border-bottom: 2px dotted $green;
+            background: #fff;
             &::before {
                 content: 'X';
                 padding-right: 5px;
