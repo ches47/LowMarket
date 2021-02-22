@@ -61,6 +61,7 @@
     .category-block .category__aside {
         width: 100%;
     }
+    
     .cabinet__blocks .history .history__list ul li {
         display: block; 
         text-align: left;
@@ -107,6 +108,10 @@
  
     .favorites__blocks .favorites-blocks-menu .favorites-list__button {
         padding-bottom: 30px;
+    }
+    .favorites__blocks .favorites-blocks-menu .favorites-list__menu-category .brand {
+        text-align: center;
+        padding-top: 20px;
     }
 
     .compare__blocks-menu .first__word {
